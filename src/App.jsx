@@ -3,6 +3,7 @@ import "./styles.css";
 import { KFCPreview, KFCStats, LadyChoicePreview, LadyChoiceStats, SpritzerPreview, SpritzerStats, LifebuoyPreview, LifebuoyStats, BeetlejuicePreview, BeetlejuiceStats, BeetlejuiceTriimpactPreview, BeetlejuiceTriimpactStats, IkeaPreview, LifebuoyProductPreview, KnorrPreview, McDonaldsPreview, MAVAPreview } from "./campaigns.jsx";
 import { PageBug, StarSticker } from "./playful.jsx";
 
+const BASE = import.meta.env.BASE_URL;
 const GREETINGS = ["Hello", "Hai", "你好", "こんにちは", "안녕하세요", "Bonjour"];
 
 const FILTER_LINES = {
@@ -131,7 +132,7 @@ export default function App() {
 
           <div className="portrait">
             <div className="semicircle" aria-hidden="true"></div>
-            <img src="/media/self-image7.png" alt="Jesrene Cheoy" />
+            <img src={`${BASE}media/self-image7.png`} alt="Jesrene Cheoy" />
              <span className="floatie floatie--a">Ad Ops</span>
             <span className="floatie floatie--b">UI/UX Designer</span>
             <span className="floatie floatie--c">Fuelled by good food</span>
@@ -190,7 +191,7 @@ export default function App() {
         </div>
         <figure className="about__photo">
           <div className="about__blob" aria-hidden="true"></div>
-          <img src="/media/self-image5.png" alt="Jesrene Cheoy" />
+          <img src={`${BASE}media/self-image5.png`} alt="Jesrene Cheoy" />
           </figure>
       </div>
     </section>
@@ -415,7 +416,7 @@ export default function App() {
 
           <article className="project" data-category="web">
             <div className="project__media">
-              <div className="laptop"><div className="laptop__screen"><img src="/media/project1.png" alt="Home screen of What Do You Meme?" /></div><div className="laptop__base"></div></div>
+              <div className="laptop"><div className="laptop__screen"><img src={`${BASE}media/project1.png`} alt="Home screen of What Do You Meme?" /></div><div className="laptop__base"></div></div>
             </div>
             <div className="project__body">
               <h3>What Do You Meme?</h3>
@@ -429,7 +430,7 @@ export default function App() {
 
           <article className="project" data-category="web">
             <div className="project__media">
-              <div className="laptop"><div className="laptop__screen"><img src="/media/asset-16.webp" alt="Enrolled courses dashboard of an online learning platform" /></div><div className="laptop__base"></div></div>
+              <div className="laptop"><div className="laptop__screen"><img src={`${BASE}media/asset-16.webp`} alt="Enrolled courses dashboard of an online learning platform" /></div><div className="laptop__base"></div></div>
             </div>
             <div className="project__body">
               <h3>Multipurpose education platform</h3>
@@ -443,7 +444,7 @@ export default function App() {
 
           <article className="project" data-category="web">
             <div className="project__media">
-              <div className="laptop"><div className="laptop__screen"><img src="/media/asset-18.webp" alt="Floralpedia perfume store homepage" /></div><div className="laptop__base"></div></div>
+              <div className="laptop"><div className="laptop__screen"><img src={`${BASE}media/asset-18.webp`} alt="Floralpedia perfume store homepage" /></div><div className="laptop__base"></div></div>
             </div>
             <div className="project__body">
               <h3>Floralpedia</h3>
@@ -455,7 +456,7 @@ export default function App() {
 
           <article className="project" data-category="apps">
             <div className="project__media">
-              <div className="phones"><figure className="phone-wrap"><div className="phone"><img src="dist/media/asset-22.webp" alt="Stress detection app home screen" /></div></figure></div>
+              <div className="phones"><figure className="phone-wrap"><div className="phone"><img src={`${BASE}media/asset-22.webp`} alt="Stress detection app home screen" /></div></figure></div>
             </div>
             <div className="project__body">
               <h3>Stress detection app</h3>
@@ -570,7 +571,7 @@ export default function App() {
           <a className="btn btn--ink" href="mailto:jescheoy@gmail.com">jescheoy@gmail.com</a>
           <a className="btn btn--outline" href="https://www.linkedin.com/in/jesrenecheoy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a className="btn btn--outline" href="https://github.com/jesrene" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a className="btn btn--outline" href="/media/resume.pdf" download="JesreneCheoy-Resume.pdf">Download resume</a>
+          <a className="btn btn--outline" href={`${BASE}media/resume.pdf`} download="JesreneCheoy-Resume.pdf">Download resume</a>
         </div>
       </div>
     </section>
